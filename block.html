@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+<script>
+$(document).ready(function(){
+$(document).on('keydown', function(event) {
+    if (event.keyCode == 123) {
+        alert("This function has been disabled to prevent you from stealing my code!");
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        alert("This function has been disabled to prevent you from stealing my code!");
+        return false;
+    } else if (event.ctrlKey && event.keyCode == 85) {
+        alert("This function has been disabled to prevent you from stealing my code!");
+        return false;
+    }
+});
+
+$(document).on('contextmenu', function(e) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    e.preventDefault();
+});
+});
+</script>
+<h1> Keyboard keys block to click</h1>
+</body>
+</html>
